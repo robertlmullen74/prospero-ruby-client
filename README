@@ -1,4 +1,4 @@
-This application has a few goals, it's sort of RESTful and uses sinatra
+This application has a few goals, it's sort of RESTful and uses sinatra to interact with prospero messaging system.
 	1. Provides a listener endpoint that will return the form post variables.
 	2. Easy way to subscribe and unsubscribe to messages.
 	3. Eventually tie into a UI client so we can easily 'tap' into messages coming from prospero, allowing us to easily test.
