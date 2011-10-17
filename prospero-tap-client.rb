@@ -13,7 +13,6 @@ require 'cmac/cmac'
 
 #$callBackUrl = 'http://localhost:4567/listen'
 $KCODE = "U"
-$callBackUrl = 'http://Campus-Messaging-berlin.ecollege-labs.com/campus/prospero-message-berlin'
 
 get '/subscriptions/whittaker-dupe-result' do
 	headers \
@@ -37,11 +36,11 @@ def subscribe_message(messageType, callBackUrl)
 
 	results = Hash.new
 	prosperoMessage = Hash.new
-	http = Net::HTTP.new('prospero.ecollege-labs.com')
+	http = Net::HTTP.new('prosperoUrl')
 	path = '/v1/subscription'
 	
 	headers = {
-		'Host' => 'prospero.ecollege-labs.com'
+		'Host' => 'prosperoUrl'
 	}
 
 	#Build the prospero message
